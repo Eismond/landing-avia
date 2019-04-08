@@ -1,0 +1,672 @@
+*{
+    /*border: 1px solid red;*/
+}
+body ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    color: #5b5c5c;
+    overflow-x:hidden;
+}
+body a{
+    color: #5b5c5c;
+    transition: .5s;
+}
+body h2, body h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+/* Navbar */
+body .navbar{
+    background: #f9f9f9;
+    line-height: 56px;
+    height: 56px;
+    overflow: hidden;
+    border-bottom: 1px solid #e7e7e7!important;
+    box-sizing: border-box;
+    margin: 0;
+}
+.navbar .col-md-4{
+    display:flex;
+    align-items:center;
+}
+.navbar-header{
+    padding: 0!important;
+    display:flex;
+    align-items:center;
+    height: 50px;
+}
+    /*Navbar social*/
+.navbar .social{
+    padding: 0;
+}
+.navbar .social ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.navbar .social ul li{
+    list-style: none;
+}
+.navbar .social ul li:first-child a{
+    margin-left: 0;
+} 
+.navbar .social a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+}
+.navbar .social .facebook{background: url(../img/sprite.png) 0 0;}
+.navbar .social .twitter{background: url(../img/sprite.png) -25px 0;}
+.navbar .social .linkedin{background: url(../img/sprite.png) -50px 0;}
+.navbar .social .google{background: url(../img/sprite.png) -75px 0;}
+.navbar .social .instagramm{background: url(../img/sprite.png) -100px 0;}
+.navbar .social .vkontakte{background: url(../img/sprite.png) -125px 0;}
+.navbar .social .pinterest{background: url(../img/sprite.png) -150px 0;}
+.navbar .social .youtube{background: url(../img/sprite.png) -175px 0;}
+.navbar .social .blogger{background: url(../img/sprite.png) -200px 0;}
+    /*Navbar phone*/
+.navbar .phone{
+    justify-content: center;
+}
+.navbar .phone ul{
+    display: flex;
+}
+.navbar .phone .separator{
+    margin: 0 15px;
+}
+    /*Navbar choose-lang*/
+.navbar .choose-lang{
+    justify-content: flex-end;
+}
+.navbar .choose-lang ul{
+    display: flex;
+}
+.navbar .choose-lang .separator{
+    margin: 0 5px;
+}
+.navbar .choose-lang .active a{
+    color: #0294f7;
+}
+/*Site-top*/
+.site-top{
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.site-top .row{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.site-top .where-buy a{
+    height: 70px;
+    min-width: 230px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px dotted #c6c6c6;
+    display: block;
+    max-width: 220px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 70px;
+    background: #f2f8fc;
+    text-decoration: underline;
+    color: #252525;
+}
+.site-top .where-buy img{
+    padding-right: 20px;
+}
+    /*site-top logo*/
+.site-top .logo{
+    text-align: center;
+}
+    /*site-top phone*/
+.site-top .phone{
+    font-size: 18px;
+    text-align: right;
+}
+.site-top .phone b{
+    color: #205ba7;
+}
+.site-top .phone ul{
+    width: 205px;
+    position: relative;
+}
+.site-top .phone ul:before{
+    content: '';
+    background: url(../img/sprite.png) -49px -28px;
+    width: 35px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+/*Nav main*/
+nav.main{
+    height: 60px;
+    box-sizing: border-box;
+    background: #205ba7;
+}
+nav.main ul{
+    line-height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 18px;
+}
+nav.main a{
+    color: #fff; 
+    display: block;
+    height: 60px;
+    min-width: 160px;
+    text-align: center;
+    padding: 0 30px;
+}
+nav.main a:hover{
+    background: #0699f9;
+    text-decoration: none;
+}
+/*order-form*/
+.order-form{
+    background: url(../img/aircraft-wallpaper-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.order-form .form-container{
+    max-width: 780px;
+    margin: 0 auto;
+    background: #007bd9;
+    padding-top: 30px;
+    color: #fff;
+    overflow: hidden;
+    
+}
+.order-form form{
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    position: relative;
+    
+    
+}
+.order-form .form-container label{
+    padding-left: 20px;
+    text-align: left;
+    font-weight: 600;
+}
+.order-form form .radio{
+    display: inline-block;
+    margin-right: 20px;
+}
+.order-form form h3{
+    color:  #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    text-align: left;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+.order-form form>.form-group{
+    width: 300px;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+.order-form .form-container{
+    position: relative;
+}
+.order-form .form-container:after{
+    content: "";
+    width: 100%;
+    height: 120px;
+    bottom: 0px;
+    left: 0;
+    display: block;
+    background: #205ba7;
+    position: absolute;
+}
+.order-form form>.form-group:last-child{
+    /*float: right;*/
+}
+    /*whence where*/
+.order-form div.form-group{
+    border-radius: 4px;
+}
+.order-form .whence select,.order-form .where select{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+}
+.order-form .whence select,.order-form .where select{
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+    /*whence select*/
+.order-form .whence select{
+    background: url(../img/airport-departures.png) no-repeat 265px center, rgb(255,255,255);
+        
+}    
+    /*where select*/
+.order-form .where select{
+    background: url(../img/airport-departures1.png) no-repeat 265px center, rgb(255,255,255);
+} 
+    /*calendar*/
+.order-form form ::-webkit-inner-spin-button { display: none; }
+.order-form form ::-webkit-calendar-picker-indicator {
+    background: url(../img/sprite.png) -88px -56px;
+    width: 22px;
+    height: 18px;
+    margin-top: 6px;
+    color: transparent;
+    opacity: 1;
+    position: relative;
+    right: -10px;
+}
+    /*who-is-flying*/
+.order-form form>.form-group.who-is-flying{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.order-form form>.form-group.who-is-flying label{
+    padding: 0;
+}
+.order-form form>.form-group.who-is-flying .form-group{
+    display: inline-block;
+    width: 97px;
+}
+.order-form form>.form-group.who-is-flying select{
+    padding-left: 35px;
+}
+.order-form form>.form-group.who-is-flying select#baby{
+    background: url(../img/crawling-baby-silhouette.png) no-repeat 10px center, rgb(255,255,255);
+}
+.order-form form>.form-group.who-is-flying select#child{
+    background: url(../img/child-with-a-balloon.png) no-repeat 10px center, rgb(255,255,255);
+}
+.order-form form>.form-group.who-is-flying select#adult{
+    background: url(../img/standing-up-man.png) no-repeat 10px center, rgb(255,255,255);
+}
+    /*select class*/
+.order-form .select-class{
+    vertical-align: top;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.order-form .select-class select{
+    padding-right: 15px;
+    
+}
+    /*form button*/
+.order-form form>.form-group.button{
+    width: 100%;
+    min-width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+.order-form form>.form-group button:hover{
+    opacity: 0.95;
+}
+.order-form form>.form-group.button p{
+    font-style: italic;
+}
+.order-form form>.form-group.button button{
+    width: 300px;
+    height: 50px;
+    background: #ff8e41;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*result-search*/
+.result-search{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.result-search h2{
+    text-align: center;
+}
+.result-search th, .result-search td{
+    text-align: center;
+    vertical-align: middle!important;
+}
+.result-search table{
+    border: 1px solid #205ba7;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.result-search thead>tr{
+    background: #205ba7;
+    color: #fff;
+    height: 60px;
+}
+.result-search tbody tr{
+    height: 45px!important;
+}
+.result-search thead>tr>th{
+    border:none!important;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.result-search td{
+    border-top:none!important;
+    padding: 0!important;
+}
+.result-search td.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+.result-search button{
+    border: 1px solid #fff;
+    width: 90px;
+    height: 36px;
+}
+.result-search table .submit{
+    font-size: 12px;
+    line-height: 14px;
+    background-color:  #007bd9;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    color: #fff;
+}
+.result-search table .order{
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color:  #ff8e41;
+    color: #fff;
+}
+/*special-offers*/
+.special-offers{
+    padding: 50px 0;
+    background: #1a5ba8;
+    min-height: 200px;
+    
+}
+.special-offers h2{
+    color: #fff;
+}
+    /*offers-slider*/
+.special-offers .slides{
+    width: 300px;
+    max-width: 300px;
+    min-width: 250px;
+    margin: 0 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+.special-offers .offers-slider{
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    max-height: 370px;
+}
+.special-offers .offers-slider button{
+    position: absolute;
+    top: -20px;
+    
+}
+.special-offers .offers-slider .slick-prev:before{
+    font-size: 0;
+    background: url(../img/sprite.png) -162px -25px;
+    background-repeat: no-repeat;
+    display: block;
+    content: '';
+    width: 16px!important;
+    height: 26px!important;
+}
+.special-offers .offers-slider .slick-next:before{
+    font-size: 0;
+    background: url(../img/sprite.png) -187px -25px;
+    background-repeat: no-repeat;
+    display: block;
+    content: '';
+    width: 16px!important;
+    height: 26px!important;
+}
+.special-offers .offers-slider .slick-prev{
+    left: 96%;
+}
+    /*.special-offers .offers-slider*/
+.special-offers .offers-slider .direction{
+    height: 70px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    line-height: 70px;
+    color:  #205ba7;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+.special-offers .offers-slider .price{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+        position: absolute;
+    display: block;
+    text-align: center;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    color:  #c52c2d;
+}
+/*footer*/
+footer{
+    min-height: 180px;    
+    background: #1a5ba8;
+    padding-bottom: 40px;
+    color: #fff;
+}
+footer a{
+    color: #fff!important;
+}
+footer .container{
+    padding-top: 40px;
+    border-top: 2px solid #fff;
+}
+footer .footer-logo{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff!important;
+}
+footer .footer-logo img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+/*main link*/
+footer .main-link{
+    max-height: 110px;
+}
+footer .main-link li{
+    margin-bottom: 15px;
+    width: 50%;
+}
+footer .main-link li a{
+    font-size: 16px;
+    text-decoration: underline;
+}
+footer .main-link ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 120px;
+}
+footer .phone{
+    font-size: 18px;
+    text-align: right;
+}
+.open-main{
+    display: none;
+}
+@media (max-width: 992px){
+    .navbar .phone{
+        display: none;
+    }
+    footer .phone{
+        text-align: center!important;
+    }
+    nav.main a {
+    color: #fff;
+    display: block;
+    height: 60px;
+    min-width: auto;
+    text-align: center;
+    padding: 0px 15px;
+}
+}
+@media (max-width: 768px){
+    body .navbar{
+        height: auto;
+    }
+    .navbar-header{
+        height: auto;
+    }
+    .site-top{
+        padding: 20px 0;
+    }
+    .site-top .where-buy{
+        width: 230px!important;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+    .site-top .logo{
+        margin-bottom: 10px;
+    }
+    .site-top .phone{
+        display: flex;
+        justify-content: center;
+    }
+    footer{
+        text-align: center;
+    }
+    /*menu*/
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menu.block{
+        display: block;
+    }
+    nav.main{
+        position: relative;
+    }
+    nav.main ul{
+      background: #205ba7;
+        display: none;
+        position: absolute;
+        z-index: 10;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+    nav.main li{
+        background: #205ba7;
+        
+    }
+    nav.main li a{
+        border-bottom: 2px dotted rgba(255,255,255,.7)
+    }
+    .open-main{
+        display: block;
+            position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        vertical-align: middle;
+        line-height: 60px;
+        color: #fff;
+        width: 30px;
+    }
+    .open-main:hover{
+        cursor: pointer;
+    }
+    footer .main-link,footer .main-link ul{
+        max-height: inherit;
+    }
+    footer .main-link ul{
+        align-items: center;
+    }
+}
+@media (max-width: 660px){
+    .order-form .form-container form,.order-form .form-container h3{
+        text-align: center;
+    }
+    .order-form form>.form-group.who-is-flying{
+        margin-bottom: 0;
+    }
+    footer .main-link ul {
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    max-height: 220px;
+    margin-bottom: 20px
+    }
+    .container>.navbar-header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navbar .col-xs-12{
+        justify-content: center;
+    }
+        .order-form form>.form-group.button button{
+    width: 250px;
+    }
+        .navbar .social{
+    padding-top: 15px;
+    }
+
+}
+@media (max-width: 380px){
+    .order-form form>.form-group{
+        width: 250px;
+    }
+    .order-form .where select {
+    background: url(../img/airport-departures1.png) no-repeat 215px center, rgb(255,255,255);
+    }
+    .order-form .whence select {
+    background: url(../img/airport-departures.png) no-repeat 215px center, rgb(255,255,255);
+}
+    .special-offers .offers-slider .slick-prev{
+        left: 90%;
+    }
+    .navbar .social a{
+        margin: 0 3px;
+    }
+    
+}
+
